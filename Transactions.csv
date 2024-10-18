@@ -1,8 +1,6 @@
 date|time|description|vendor|amount
 2023-04-15|10:13:25|ergonomic keyboard|Amazon|-89.50
 2023-04-15|11:15:00|Invoice 1001 paid|Joe|1500.00
-
-
 2023-04-15|11:15:00|Amazon|Nate|2000.00
 2023-04-15|11:15:00|Finish Line|Mox|15000.00
 2023-04-15|11:15:00|Footlocker|Jup|62000.00
@@ -11,5 +9,3 @@ date|time|description|vendor|amount
 2023-04-15|11:15:00|Canes|Bron|5000.00
 2023-04-15|11:15:00|Canes|Slime|32000.00
 2023-04-15|11:15:00|Footlocker|Joe|1500.00
-
-

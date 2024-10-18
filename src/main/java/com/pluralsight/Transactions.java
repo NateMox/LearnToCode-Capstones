@@ -15,7 +15,7 @@ public class Homescreen {
 
     LocalDateTime now = LocalDateTime.now();
     DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
 
     public Homescreen (String description, String vendor, double amount) {
