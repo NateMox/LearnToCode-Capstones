@@ -1,11 +1,10 @@
 package com.pluralsight;
 
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Homescreen {
+public class Transactions {
 
     private String date ;
     private String time;
@@ -13,12 +12,18 @@ public class Homescreen {
     private String vendor;
     private double amount;
 
+
+
+    // Get the current date and time
     LocalDateTime now = LocalDateTime.now();
+    // Define format for date
     DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    // Define format for time
     DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
+    // Constructor to initialize a Transactions object
+    public Transactions (String date, String time, String description, String vendor, double amount) {
 
-    public Homescreen (String description, String vendor, double amount) {
         this.date = now.format(dateFormatter);
         this.time = now.format(timeFormatter);
         this.description = description;
@@ -27,13 +32,13 @@ public class Homescreen {
 
 
 
-    }
+    } // Override toString method for formatted output of the transaction
     @Override
     public String toString() {
         return date + "|" + time + "|" + description + "|" + vendor + "|" + amount;
 
     }
-
+    // Getters and setters
     public String getDate() {
         return date;
     }
